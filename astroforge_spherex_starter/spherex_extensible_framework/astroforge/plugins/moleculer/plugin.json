@@ -1,0 +1,31 @@
+{
+  "id": "spherex_spectral_analyzer",
+  "name": "SPHEREx Spectral Analyzer & Explorer",
+  "version": "2.0.0",
+  "description": "SPHEREx FITS observation folder explorer, interactive viewer, spectral extraction and HITRAN molecular analysis.",
+  "author": "AstroForge",
+  "type": "hybrid",
+  "entrypoint": "plugin:SphereXSpectralAnalyzer",
+  "ui": {
+    "type": "javascript",
+    "entrypoint": "ui.js"
+  },
+  "dependencies": [
+    "numpy",
+    "matplotlib",
+    "astropy",
+    "hitran-api",
+    "truststore"
+  ],
+  "actions": [
+    "list_downloaded_folders",
+    "select_folder",
+    "get_frame",
+    "toggle_point",
+    "clear_selections",
+    "create_wcs",
+    "create_color_map",
+    "extract_spectrum",
+    "export_labels"
+  ]
+}

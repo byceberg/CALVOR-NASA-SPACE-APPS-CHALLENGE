@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AstroForge</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-container">
+  <!-- Top Menu Bar (Cleaned) -->
+  <header class="top-menu-bar">
+    <div class="menu-left">
+      <div class="brand">
+        <span class="brand-icon">■</span>
+        <span>ASTROFORGE</span>
+      </div>
+    </div>
+    <div class="menu-right">
+      <button class="icon-btn" title="Save Project">💾</button>
+      <button class="icon-btn" title="Options">⚙</button>
+      <button class="icon-btn" title="User Profile">👤</button>
+    </div>
+  </header>
+
+  <!-- Sub-bar / Tabs -->
+  <div class="sub-bar">
+    <div class="tabs-group" id="workspace-tabs">
+      <button class="tab-item active" data-tab="workspace">Workspace</button>
+    </div>
+    <div class="layout-controls">
+      <button id="refresh" class="btn-text">⟳ Refresh Modules</button>
+      <button id="toggle-console" class="btn-text">📋 Messages (Log)</button>
+    </div>
+  </div>
+
+  <!-- Main IDE Layout -->
+  <div class="ide-body">
+    <!-- Left Panel: Extensions Only -->
+    <aside class="side-panel">
+      <div class="section-title">Extensions</div>
+      <nav id="plugin-nav" class="extension-list"></nav>
+    </aside>
+
+    <main class="center-workspace">
+      <section id="workspace" aria-live="polite"></section>
+      
+      <section id="console" class="hidden">
+        <div class="console-head">
+          <span>Messages & Log Tracking</span>
+          <button id="clear-console" class="btn ghost">Clear</button>
+        </div>
+        <pre id="console-log"></pre>
+      </section>
+    </main>
+
+    <!-- Right Panel: Settings / Properties Inspector -->
+    <aside class="right-panel">
+      <div class="section-title">Settings</div>
+      <div class="prop-subtitle" id="prop-subtitle-text">Active component properties</div>
+      
+      <div class="settings-form" style="margin-top: 12px;">
+        <div class="field">
+          <label>Module Name</label>
+          <input type="text" id="prop-name-input" value="AstroForge" readonly />
+        </div>
+        <div class="field" style="margin-top: 8px;">
+          <label>Version</label>
+          <div id="prop-version-display" class="prop-val">2.6.0</div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

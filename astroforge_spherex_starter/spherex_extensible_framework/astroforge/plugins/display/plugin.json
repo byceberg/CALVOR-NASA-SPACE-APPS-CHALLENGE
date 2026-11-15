@@ -1,0 +1,12 @@
+{
+  "id": "spherex_viewer",
+  "name": "SPHEREx FITS Explorer",
+  "version": "1.0.0",
+  "type": "hybrid",
+  "description": "FITS kareleri arası geçiş, hedef koordinat işaretleme ve aday gök cismi takip modülü",
+  "entrypoint": "viewer:SphereXPlugin",
+  "ui": {
+    "modes": ["panel"],
+    "default": "panel"
+  }
+}

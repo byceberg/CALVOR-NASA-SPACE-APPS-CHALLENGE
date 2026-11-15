@@ -1,0 +1,9 @@
+
+{
+    "id": "spherex_downloader",
+    "name": "SPHEREx Downloader",
+    "version": "1.0.0",
+    "type": "functional",
+    "description": "Search and download SPHEREx astronomical observations",
+    "entrypoint": "plugin:SPHERExDownloader"
+}

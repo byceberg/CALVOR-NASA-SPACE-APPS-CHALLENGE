@@ -1,0 +1,8 @@
+{
+  "id": "fits_inspector",
+  "name": "FITS Inspector",
+  "version": "0.1.0",
+  "type": "functional",
+  "entrypoint": "plugin:FITSInspector",
+  "description": "Optional Astropy-based local FITS primary-header inspection."
+}

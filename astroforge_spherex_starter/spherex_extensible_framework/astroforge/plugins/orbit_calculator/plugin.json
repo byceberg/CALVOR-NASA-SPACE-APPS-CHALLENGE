@@ -1,0 +1,8 @@
+{
+  "id": "fits_config",
+  "name": "FITS & Framework Config",
+  "version": "1.0.0",
+  "type": "visual",
+  "description": "downloaded_fits klasör seçimi ve framework override ayarları",
+  "entrypoint": "plugin:FitsConfigPlugin"
+}
